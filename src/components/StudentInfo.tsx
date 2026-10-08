@@ -23,7 +23,7 @@ export function StudentInfo() {
   <p className="text-sm text-muted-foreground">ชื่อ: pannawat wongkeawjan</p>
   <p className="text-sm text-muted-foreground">รหัสนักศึกษา: 650610694</p>
   <p className="text-sm text-muted-foreground">Email: mingsa405@gmail.com</p>
-  <p className="text-sm text-muted-foreground">งานอดเรกเล่นบาสเกตบอล</p>
+  <p className="text-sm text-muted-foreground">งานอดิเรก: เล่นบาสเกตบอล</p>
 </div>
         <DrawerFooter>
 
