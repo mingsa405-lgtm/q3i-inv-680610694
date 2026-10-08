@@ -24,7 +24,8 @@ export default function App() {
 
           {/* Put OverviewCards and CategoryCards under DashboardTabs */}
           {/* And then use DashboardTabs here instead */}
-          <OverviewCards />
+          
+          <OverviewCards  />
           <ItemList />
         </div>
       </main>

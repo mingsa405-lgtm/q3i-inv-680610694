@@ -21,3 +21,5 @@ export interface InventoryItem {
   category: "Electronics" | "Stationery" | "Grocery" | "Clothing" | "Tools" | "Other";
   date: string;
 }
+
+
