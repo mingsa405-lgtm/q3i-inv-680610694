@@ -15,7 +15,11 @@ import { Trash } from "lucide-react";
 
 export function ItemList() {
   const { inventory } = useItemStore();
+  const deleteInventoryItem = useItemStore((state) => state.deleteInventoryItem);
 
+  const handleDelete = (id: string) => {
+    deleteInventoryItem(id);
+  };
   return (
     <Card>
       <CardHeader>
@@ -64,16 +68,18 @@ export function ItemList() {
                     
                   </TableCell>
                   <TableCell className="text-right">
+                    
                     <Button 
                     className="text-white bg-red-500 hover:bg-red-600 text-white"
                     variant="ghost"
                     size="sm"
+                    onClick={() => handleDelete(item.id)}
                   >
                     <Trash className="h-4 w-4" />
                     Delete
-                  </Button  >
+                  </Button >
               
-                  </TableCell>
+                  </TableCell >
                   <TableCell className="text-right">
                 </TableCell>
               </TableRow>
